@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Breakout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <canvas class="canvas-bout" id="canvas"></canvas>
+
+    <dialog id="modal-lose">
+        <div class="modal_content">
+            <h1 class="modal_title" title="You lost" >You lost 😢🖕 </h1>
+            <form method="dialog">
+                <button id = "btn-modal-l"class="modal_button" title="Nuevo intento">Nuevo intento</button>
+            </form>
+            <a href="index.html" title="Inicio">Inicio</a>
+        </div>
+    </dialog>
+
+    <dialog id="modal-winner">
+        <div class="modal_content modal-winner">
+            <h1 class="modal_title" title="Winner">Winner 😀</h1>
+            <form method="dialog">
+                <button id="btn-modal-w" class="modal_button" title="Siguiente nivel">Siguiente nivel</button>
+            </form>
+            <a href="index.html" title="Inicio">Inicio</a>
+        </div>
+    </dialog>
+    <script  src="js/breakout.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>
